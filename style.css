@@ -1,0 +1,22 @@
+#app{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#color_board{
+  margin: auto;
+  width: 90%;
+  height: 300px;
+  border: 1px solid #000;
+}
+
+ul{
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+li{
+  list-style: none;
+}
+
