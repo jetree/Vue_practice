@@ -9,64 +9,19 @@
 </head>
 <body>
   <div id="app">
-    <div id="color_board">
+    <div id="color_board" v-bind:style=" style ">
     
     </div>
-      <ul>
-        <div>
-            <color-slider></color-slider>
-        </div>
-      </ul>
-        <!-- <ul>
-          <li>
-            <div>
-                <input v-model="value" type="range" name="red" min="0" max="255" >
-            </div>
-            <div>
-              <input v-bind:value="value" type="nunber" name="red" min="0" max="255">
-            </div>
-          </li>
-          <li>
-            <div>
-                <input v-model="value" type="range" name="green"  min="0" max="255" >
-            </div>
-            <div>
-              <input v-bind:value="value" type="nunber" name="green" min="0" max="255">
-            </div>
-          </li>
-          <li>
-            <div>
-                <input v-model="value" type="range" name="blue"  min="0" max="255" >
-            </div>
-            <div>
-              <input v-bind:value="value" type="nunber" name="blue" min="0" max="255">
-            </div>
-          </li>
-        </ul> -->
+    <ul>
+        <color-slider color="red"></color-slider>
+        <color-slider color="green"></color-slider>
+        <color-slider color="blue"></color-slider>
+    </ul>
+    <p>{{style}}</p>
+
   </div>
 
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script>
-    Vue.component('color-slider',{
-      data:function(){
-        return{
-          value:0
-        }
-      },
-      methods:{
-        changeValue:function(){
-          return this.value
-        } 
-      },
-      template:'<input v-on:change="changeValue" type="range" min="0" max="255" >'
-    })
-
-    let app = new Vue({
-      el: "#app",
-      data:{
-        value:0
-      },
-    });
-  </script>
+  <script src="main.js"></script>
 </body>
 </html>

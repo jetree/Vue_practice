@@ -1,6 +1,6 @@
 #app{
   max-width: 600px;
-  margin: 0 auto;
+  margin: 30px auto;
 }
 
 #color_board{
@@ -18,5 +18,13 @@ ul{
 
 li{
   list-style: none;
+}
+
+input{
+  margin-top:10px;
+}
+
+p{
+  text-align: center
 }
 
