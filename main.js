@@ -8,7 +8,7 @@
           value:"0",
         }
       },
-      template:'<div><p>{{color}}</p><input type="range" @input="childMethod" v-model="value" min="0" max="255"><p><input type="number" @input="childMethod" v-model="value" min="0" max="255"></p><p>{{value}}</p></div>',
+      template:`<div><p>{{color}}</p><input type="range" @input="childMethod" v-model="value" min="0" max="255"><p><input type="number" @input="childMethod" v-model="value" min="0" max="255"></p><p>{{value}}</p></div>`,
 
       methods:{
         childMethod:function(){
@@ -29,7 +29,7 @@
           green:"0",
           blue:"0",
           style:{
-            backgroundColor:"0",
+            backgroundColor:"rgb(0,0,0)",
           },
         }
       },
