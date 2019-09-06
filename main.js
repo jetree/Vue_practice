@@ -8,7 +8,16 @@
           value:"0",
         }
       },
-      template:`<div><p>{{color}}</p><input type="range" @input="childMethod" v-model="value" min="0" max="255"><p><input type="number" @input="childMethod" v-model="value" min="0" max="255"></p><p>{{value}}</p></div>`,
+
+      // templateは``で囲むと改行できる
+      template:`
+        <div>
+          <p>{{color}}</p>
+          <input type="range" @input="childMethod" v-model="value" min="0" max="255">
+          <p><input type="number" @input="childMethod" v-model="value" min="0" max="255"></p>
+          <p>{{value}}</p>
+        </div>
+        `,
 
       methods:{
         childMethod:function(){
