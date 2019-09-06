@@ -14,9 +14,9 @@
     </div>
     <ul>
       <!-- カスタムイベントはケバブケースで書く -->
-      <color-slider color="red" max="255" @parent-method="$changeColor"></color-slider>
-      <color-slider color="green" max="255" @parent-method="$changeColor"></color-slider>
-      <color-slider color="blue" max="255" @parent-method="$changeColor"></color-slider>
+      <color-slider color="red" @parent-method="$changeColor"></color-slider>
+      <color-slider color="green" @parent-method="$changeColor"></color-slider>
+      <color-slider color="blue" @parent-method="$changeColor"></color-slider>
       <li>
           <p>opacity</p>
           <input type="range" @input="$changeOpacity" v-model="opacity" min="0" max="1" step="0.01">
